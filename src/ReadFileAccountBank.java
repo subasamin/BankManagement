@@ -30,7 +30,7 @@ public class ReadFileAccountBank {
                     CreateAccountBank.BankAccounts.put(accountCode,savingsAccount);
                 }
                 else {
-                    int accountId =Integer.parseInt(parts[0]) ;
+                    int accountId =Integer.parseInt(parts[0]);
                     String accountCode = parts[1];
                     String accountName = parts[2];
                     String dateCreatAccount = parts[3];

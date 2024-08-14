@@ -3,6 +3,11 @@ import java.util.Scanner;
 public class AccountBankManagement {
     public static void main(String[] args) {
         ReadFileAccountBank.readFile();
+        int i = 1;
+        for (BankAccount bankAccount : CreateAccountBank.BankAccounts.values()){
+            bankAccount.setAccountId(i);
+            i++;
+        }
         Scanner scanner = new Scanner(System.in);
         do {
             System.out.println("Chương trình quản lý tài khoản ngân hàng.");
